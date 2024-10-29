@@ -1,0 +1,207 @@
+@media all and (max-device-width:470px) {
+    .social-link a {
+        padding: 5px;
+        color: white !important;
+        transition: .2s;
+        overflow: hidden;
+        font-size: 11pt;
+    }
+}
+
+@media all and (max-device-width:2000px) and (min-device-width:1500px) {
+    .aboutus-bgimage {
+        height: 400px;
+    }
+}
+
+@media all and (max-device-width:8000px) and (min-device-width:2000px) {
+    .aboutus-bgimage {
+        height: 400px;
+    }
+}
+
+@media all and (max-device-width:1500px) and (min-device-width:1000px) {
+    .aboutus-bgimage {
+        height: 400px;
+    }
+}
+
+@media all and (max-device-width:1000px) and (min-device-width:500px) {
+    .aboutus-bgimage {
+        height: 400px;
+    }
+}
+
+@media all and (max-device-width:500px) and (min-device-width:100px) {
+    .aboutus-bgimage {
+        height: 429px;
+    }
+}
+
+@media all and (max-device-width:410px) and (min-device-width:1200px) {
+    .text-over-video {
+        bottom: 377px;
+    }
+}
+
+@media all and (max-device-width:610px) and (min-device-width:410px) {
+    .text-over-video {
+        bottom: 272px;
+    }
+}
+
+@media all and (max-device-width:820px) and (min-device-width:610px) {
+    .text-over-video {
+        bottom: 160px;
+    }
+}
+
+@media all and (max-device-width:1200px) and (min-device-width:810px) {
+    .text-over-video {
+        bottom: 48px;
+    }
+}
+
+@media all and (max-device-width:1440px) and (min-device-width:1200px) {
+    .text-over-video {
+        top: 652px;
+    }
+}
+
+@media all and (max-device-width:1700px) and (min-device-width:1440px) {
+    .text-over-video {
+        top: 770;
+    }
+}
+
+@media (max-device-width: 780px) {
+    .form-btn {
+        padding-top: 0 !important;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-device-width: 400px) {
+    .bg-image {
+        height: 170px;
+    }
+}
+
+@media (max-device-width: 500px) {
+    .slider-image {
+        height: 278px;
+    }
+}
+
+@media (max-device-width: 260px) {
+    .slider-text {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-device-width:562px) {
+    .slider_text {
+        visibility: hidden;
+    }
+}
+
+@media all and (min-device-width:562px) and (max-device-width:800px) {
+    .slider_text {
+        top: 32%;
+    }
+}
+
+@media all and (min-device-width:800px) and (max-device-width:1300px) {
+    .slider_text {
+        top: 50%;
+    }
+}
+
+@media all and (min-device-width:620px) and (max-device-width:850px) {
+    .owlhomeslider {
+        top: 66px;
+        width: 50%;
+    }
+}
+
+@media all and (max-device-width:620px) {
+    .owlhomeslider {
+        visibility: hidden;
+    }
+}
+
+/* @media all and (min-device-width:621px){
+    .video_div h1{
+        visibility: hidden;
+    }
+} */
+@media all and (min-device-width:490px) and (max-device-width:766px) {
+    .best-time-img-size {
+        height: 314px;
+    }
+}
+
+@media all and (min-device-width:766px) and (max-device-width:990px) {
+    .img-size990 {
+        height: 240px;
+        object-fit: cover;
+    }
+}
+
+@media all and (max-device-width:991px) {
+    .whyvisitchitralcoltext1 {
+        position: relative;
+        right: 0;
+        background-color: white !important;
+        max-width: 80%;
+        top: -55px;
+        justify-content: center;
+        left: 50px;
+    }
+
+    .whyvisitchitralcoltext1cardbody {
+        padding: 10px !important;
+    }
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+
+/* .introtext {
+    position: absolute;
+    top: 50%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+    color: white !important;
+}
+
+@media all and (max-device-width:320px) {
+    .introtext {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white !important;
+        width: 300px;
+    }
+
+    .introtext h1 {
+        font-size: 18px;
+    }
+}
+
+@media all and (max-device-width:768px) and (min-device-width:320px) {
+    .introtext {
+        position: absolute;
+        top: 88%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white !important;
+        width: 300px;
+    }
+
+    .introtext h1 {
+        font-size: 25px !important;
+    }
+}
+ */

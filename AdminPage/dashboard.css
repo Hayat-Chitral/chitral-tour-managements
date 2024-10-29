@@ -1,0 +1,398 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-weight: 600;
+    font-size: 13pt; */
+    font-family: 'Sora', sans-serif;
+}
+
+/* #myTable {
+    background: #191c24 !important;
+} */
+
+body {
+    background-color: #E8E8E8;
+    text-align: justify !important;
+}
+
+/* Animation for Admin side setting button */
+@keyframes myOrbit {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#setting_btn button {
+    animation: myOrbit 2s linear infinite;
+}
+
+#setting_btn button:hover {
+    animation: myOrbit none;
+}
+
+#setting_btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+#setting_btn button {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    background: #000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 38px -6px #fff;
+}
+
+@keyframes myanimation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.dashboard_animation a:hover .icofont {
+    animation: myanimation ease-in-out 0.5s 1 alternate;
+}
+
+.dashboard_card .card:hover .dashboard-icon {
+    animation: myanimation ease-in-out 0.5s 1 alternate;
+}
+
+.dashboard_card .card:hover {
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+}
+
+#sidebar {
+    width: 250px;
+    display:block;
+    background: #0091d5;
+    color: #fff;
+    box-shadow: 5px 5px;
+    box-shadow: -6px 1px 15px 1px black;
+    z-index: 1;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+.avatar{
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: contain;
+}
+
+.sidebar-header img {
+    box-shadow: 0 0px 8px 6px rgb(100, 153, 206);
+}
+
+@media (max-width:886px) {
+    #sidebar {
+       width: 0;
+    }
+} 
+
+.top-navbar {
+    background: #0091d5;
+    padding-bottom: 13px !important;
+    box-shadow: 1px 1px 5px -2px #000;
+}
+.card-b-r{
+    border-right:2px solid white;
+}
+.card-shadow{
+    box-shadow: 1px 1px 7px -4px black;
+    border-radius: unset;
+}
+.card-count{
+    font-size:35px;
+}
+
+.icofont {
+    font-size: 14pt;
+    margin-right: 1rem;
+}
+.dashboard_animation{
+    margin-top: 5px;
+}
+.dashboard_animation ul a {
+    padding-left: 50px !important;
+}
+hr{
+    background:#ddd;
+}
+.tile{
+    background-color: #fff;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 1px 1px 6px -3px #000;
+}
+
+.content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 14px;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    border-radius: 0 100px 100px 0;
+    text-decoration: none;
+    color: #000;
+    transition: all .5s ease;
+    width: 96%;
+    background: #fff;
+    border-left-color: #000;
+}
+
+
+.dashboard_animation ul {
+    position: static;
+    display: none;
+}
+
+.arrow-icon {
+    position: absolute;
+    top: 56%;
+    right: -70px;
+    transform: translateY(-50%);
+    font-size: 17px;
+    width: 100%;
+}
+@media all and (max-device-width:991px) {
+    .dashboard_card .card {
+        margin-bottom: 1.5rem !important;
+    }
+}
+.dashboard_card .card {
+    box-shadow: 0 0px 11px 5px gray;
+    margin-bottom: 1.5rem !important;
+}
+.dashboard-icon {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 40pt;
+    color: black;
+}
+.arrow-icon:hover {
+    color: #000;
+    font-size: 14pt !important;
+}
+.arrow-icon.rotate {
+    transform: translateY(-50%) rotate(90deg);
+}
+.collapsebtn{
+    color: #fff !important;
+    font-size: 25px;
+    position: absolute;
+    top: 11px;
+    left: 4px;
+    height: 45px;
+    width: 45px;
+    background: none !important;
+    text-align: center;
+    cursor: pointer;
+    z-index: 9999;
+}
+nav ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding-left: 40px;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+.dashboard_animation.active a {
+    color: #000;
+    text-decoration: none;
+    background: #fff;
+    border-left-color: #000;
+    border-radius: 0px 100px 100px 0px;
+    width: 96%;
+}
+
+@media all and (min-device-width:992px) and (max-device-width:1540px) {
+    .dashboard_firsttwocol {
+        min-width: 41% !important;
+    }
+}
+
+@media all and (min-device-width:992px) and (max-device-width:1540px) {
+    .dashboard_secondtwocol {
+        min-width: 41% !important;
+    }
+}
+
+#icon_on_dashboard {
+    text-decoration: none;
+    color: black;
+}
+
+#icon_on_dashboard:hover {
+    color: red !important;
+}
+
+.bar-inside-btn {
+    margin-top: 5px !important;
+}
+
+.adduser_form {
+    background-color: white !important;
+}
+
+.action_icon:hover {
+    text-decoration: none;
+}
+
+/* #myTable {
+    background-color: white !important;
+    border: 0px !important;
+} */
+
+
+.border-top-none {
+    border-top: 1px solid white !important;
+}
+
+table.dataTable {
+    border-collapse: collapse !important;
+}
+
+/* This is for DataTable  End*/
+.thead-border-bottom {
+    border-bottom: 1px solid black !important;
+}
+
+.fielderror {
+    border: 2px solid red !important;
+}
+
+#BlogAuthorDataTable_wrapper {
+    background-color: white !important;
+    padding: 20px !important;
+    box-shadow: 10px 10px 10px rgb(26, 25, 62);
+}
+
+.tableshadow {
+    box-shadow: 12px 12px 12px darkblue;
+}
+
+.fortbborder,
+th {
+    border-bottom: none !important;
+    border-top: none !important;
+}
+
+#theadborder {
+    border-bottom: none !important;
+}
+
+/* Setting CSS */
+
+#setting_card {
+    width: 300px;
+    position: fixed;
+    bottom: 0;
+    right: -300px;
+    z-index: 1;
+    transition: all 1s ease;
+}
+#setting_card .card-header {
+    background: #000;
+}
+.datamodal {
+    width: 105% !important;
+}
+
+.imgplaceholder {
+    display: block;
+    height: 353px;
+    width: 366px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px #000 solid !important;
+}
+.chose_profile_text {
+    position: absolute;
+}
+.image_radius {
+    border-radius: 50%;
+}
+.user_table_row:hover {
+    background-color: #fff !important;
+}
+.catagory_image_class{ 
+    min-height: 300px;
+    max-height: 300px;
+}
+.adminlogout a:hover{
+    background: #000 !important;
+    color: rgb(98, 204, 104) !important;
+}
+
+.logoutbtn button{
+    background-color: #0091d5 !important;
+    border: none !important;
+}
+.logoutbtn button:focus{
+    box-shadow: none !important;
+}
+.logoutbtn a{
+    text-decoration: none;
+}
+.logoutbtn a:hover{
+    background: #000 !important;
+    color: #fff !important;
+}
+.blogform .nav-item a{
+    background-color: #296388;
+}
+.viewproducts{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 29px;
+}
+.saveuser{
+    background-color: #0091d5 !important;
+}
