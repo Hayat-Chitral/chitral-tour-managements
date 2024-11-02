@@ -1,8 +1,8 @@
 <?php 
 include "Include/header.php";
 ?>
-<div class="container-fluid px-0">
 
+<div class="container-fluid px-0">
     <div class="hero_carosel owl-carousel owl-theme">
         <div class="item">
             <div class="hero-img">
@@ -79,7 +79,6 @@ include "Include/header.php";
     </div>
     <div class="slider-counter"></div>
 </div>
-
 <div class="container-fluid px-3 mt-5">
     <div class="container px-0">
         <div class="row mx-auto cardsection">

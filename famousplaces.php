@@ -377,9 +377,6 @@ include "Include/header.php";
         </div>
     </div>
 </div>
-<?php
-include "includes/scripts.php";
-?>
 <?php 
 include "Include/footer.php";
 ?>

@@ -1,6 +1,6 @@
 <?php
-// include "../databases/database.php";
-include "header.php";
+include "includes/header.php";
+include "includes/sidebar.php";
 ?>
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 <div class="container-fluid">
@@ -129,9 +129,7 @@ include "header.php";
         </div>
     </div>
 </div>
-<?php
-include "includes/scripts.php";
-?>
+
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 <script>
 $(document).ready(function() {
@@ -153,7 +151,7 @@ $(document).ready(function() {
 });
 </script>
 <?php
-include "footer.php";
+    include "includes/footer.php";
 // include "includes/scripts.php";
 unset($_SESSION['errors']);
 unset($_SESSION['success']);

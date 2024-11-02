@@ -1,5 +1,6 @@
 <?php
-include "header.php";
+include "includes/header.php";
+include "includes/sidebar.php";
 ?>
 <div class="tile">
 
@@ -51,7 +52,5 @@ include "header.php";
 </div>
 </div>
 <?php
-include "includes/scripts.php";
-?><?php
-    include "footer.php";
+include "includes/footer.php"
 ?>

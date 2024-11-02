@@ -1,10 +1,13 @@
 <?php 
-include "header.php";
+include "includes/header.php";
+include "includes/sidebar.php";
 // $user = $_SESSION['user_loggedin'];
 // echo "<img class='img-fluid' src='User_Images/".$user['user_img']."' >"; 
 
 // echo $user['user_img'];
 // ?>
+
+
 <div class="tile">
     <h4 class="pl-3">Dashboard</h4>
     <div class="container-fluid">
@@ -77,9 +80,8 @@ include "header.php";
         </div>
     </div>
 </div>
-
+</div>
+</div>
 <?php
-include "includes/scripts.php";
+    include "includes/footer.php"
 ?>
-<?php
-include "footer.php";?>

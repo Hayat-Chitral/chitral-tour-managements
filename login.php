@@ -86,7 +86,7 @@ if (isset($_SESSION['is_login'])) {
         {
             while ($row=mysqli_fetch_assoc($runQuery)) 
             {
-                $_SESSION['user_loggedin']= ['email'=> $row['email'], 'user_name'=> $row['user_name'], 'user_img'=> $row['image'] ];
+                $_SESSION['user_loggedin']= ['email'=> $row['email'], 'name'=> $row['name'], 'user_img'=> $row['profile'] ];
                 $_SESSION['is_login']=true; 
                 header('location:AdminPage/dashboard');
             }

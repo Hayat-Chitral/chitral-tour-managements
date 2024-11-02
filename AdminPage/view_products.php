@@ -1,6 +1,6 @@
 <?php
-include "header.php";
-// include "delete.php";
+include "includes/header.php";
+include "includes/sidebar.php";
 ?>
 <div class="container-fluid">
     <div class="tile">
@@ -89,11 +89,6 @@ include "header.php";
   </div>
 </div>
 <?php
-include "includes/scripts.php";
-?>
-<?php
-include "includes/scripts.php";
-
+include "includes/footer.php";
 unset($_SESSION['updatedproduct']);
-include "footer.php";
 ?>

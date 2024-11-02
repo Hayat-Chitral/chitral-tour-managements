@@ -1,5 +1,6 @@
 <?php
-include "header.php";
+include "includes/header.php";
+include "includes/sidebar.php";
 ?>
 <div class="container-fluid">
     <div class="tile px-2">
@@ -104,9 +105,7 @@ include "header.php";
         </div>
     </div>
 </div>
+
 <?php
-include "includes/scripts.php";
-?>
-<?php
-include "footer.php";
+    include "includes/footer.php"
 ?>

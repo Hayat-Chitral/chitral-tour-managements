@@ -1,9 +1,10 @@
 <?php
+include "includes/header.php";
+include "includes/sidebar.php";
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-
-include "header.php";?>
+?>
 <div class="container">
     <div class="content image_upload_div">
         <form class="dropzone" enctype="multipart/form-data">
@@ -62,9 +63,6 @@ Dropzone.options.myDropzone = {
     });
     </script> -->
 
-    <?php
-include "includes/scripts.php";
-?>
 
 <script>
         Dropzone.autoDiscover = false;
@@ -85,4 +83,5 @@ include "includes/scripts.php";
     });
     </script>
 <?php
-include "footer.php";?>
+    include "includes/footer.php";
+?>

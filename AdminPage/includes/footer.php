@@ -1,6 +1,5 @@
-</div>
-</div>
 
+<!-- Footer -->
 <div id="setting_card" class=" text-white">
     <div class="card bg-dark">
         <div class="card-header">
@@ -12,7 +11,6 @@
                         class="fas fa-times"></i>
                 </div>
             </div>
-
         </div>
         <div class="card-body">
             <p class="mt-2 mb-0"><i class="fas fa-arrow-circle-right mr-3"></i>color Scheme</p>
@@ -79,5 +77,12 @@
         aria-controls="collapseWidthExample"><i style="font-size:26pt;" class="fas fa-cog"></i>
     </button>
 </div>
+
+
+
+<?php 
+include "../include/partials/foot.php";
+?>
+<script src="includes/admin.js"></script>
 </body>
 </html>

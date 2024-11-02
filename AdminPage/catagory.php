@@ -1,5 +1,6 @@
 <?php
-include "header.php";
+include "includes/header.php";
+include "includes/sidebar.php";
 ?>
 <div class="container-fluid">
     <h1 class="text-center mt-5">Products</h1>
@@ -52,6 +53,5 @@ include "header.php";
 </div>
 <?php
 unset($_SESSION['updatedproduct']);
-include "footer.php";
-include "includes/scripts.php";
+include "includes/footer.php";
 ?>

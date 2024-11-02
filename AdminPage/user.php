@@ -1,5 +1,6 @@
-<?php 
-include "header.php";
+<?php
+include "includes/header.php";
+include "includes/sidebar.php";
 ?>
 <div class="container-fluid">
     <div class="tile">
@@ -37,13 +38,12 @@ include "header.php";
                             <td><?php echo $row['phone']; ?></td>
                             <!-- user delete -->
                             <td><a href="delete.php?userdelete=<?php echo $row['id']; ?>"><button type="button"
-                                        class="mb-1 btn btn-danger"><i
-                                            class="fa-sharp fa-solid fa-user-xmark"></i></button></a>
+                                        class="mb-1 btn btn-danger"><i class="fa-solid fa-user-xmark"></i></button></a>
                                 <!-- User Edit -->
                                 <a href="update_user.php?edituser=<?php echo $row['id'];?>"><button type="button"
-                                        class="mb-1 btn btn-primary"><i class="fa-sharp fa-solid fa-user-pen"></i></button></a>
+                                        class="mb-1 btn btn-primary"><i class="fa-solid fa-user-pen"></i></button></a>
                                 <!-- user view on modal -->
-                                <a href="" data-userid="<?php echo $row['id']; ?>"
+                                <a href="" data-userid="<?php echo $row['id']; ?>" 
                                     data-profileimage="<?php echo "<img class='image_radius img-fluid' src='User_Images/".$row['profile']."' >"; ?>"
                                     data-userid="<?php echo $row['id'];?>" data-firstname="<?php echo $row['name'];?>"
                                     data-useremail="<?php echo $row['email']; ?>"
@@ -53,10 +53,9 @@ include "header.php";
                                     data-userdob="<?php echo $row['dob']; ?>"
                                     data-usercountry="<?php echo $row['country']; ?>"
                                     data-usercity="<?php echo $row['city']; ?>"
-                                    data-useraddress="<?php echo $row['address']; ?>" class="showdata"
-                                    data-toggle="modal" data-target="#mydatamodal">
+                                    data-useraddress="<?php echo $row['address']; ?>" class="showdata" data-toggle="modal" data-target="#mydatamodal">
                                     <button type="button" class="mb-1 btn btn-info"><i class="fa-solid fa-eye"></i></button>
-                            </a>
+                                </a>
 
                                 <!-- <?php echo "<img class='img-fluid' src='User_Images/".$row['profile']."' >"; ?> -->
                             </td>
@@ -72,10 +71,6 @@ include "header.php";
     </div>
 
 </div>
-
-<!-- <?php
-include "includes/scripts.php";
-?> -->
 
 <!-- View data in modal-->
 <div class="modal fade" id="mydatamodal">
@@ -124,4 +119,6 @@ include "includes/scripts.php";
     </div>
 </div>
 
-<?php include "footer.php";?>
+<?php
+    include "includes/footer.php"
+?>
